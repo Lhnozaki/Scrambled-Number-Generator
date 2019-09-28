@@ -11,5 +11,8 @@ module.exports = function(n) {
   }
 
   arr.unshift(0);
+  let remove = arr.splice(arr[Math.floor(Math.random() * arr.length)], 1);
+  arr.push(remove);
+
   return arr;
 };
